@@ -14,9 +14,8 @@
     "nuxt": "^3.14.159",
     "obelisk.js": "https://github.com/nosir/obelisk.js.git",
     "vite-plugin-vuetify": "^2.0.4",
-    "vue": "latest",
-    "vue-router": "latest",
+    "@pinia/nuxt": "^0.7.0",
+    "pinia": "^2.2.6",
     "vuetify": "^3.7.4"
-  },
-  "packageManager": "yarn@4.5.1+sha256.dc2e45a77f87a9c2a76708d098ab54ca0cfdd5ec2cf7d9e3c1f24bf786a2383c"
+  }
 }
