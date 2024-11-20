@@ -12,6 +12,7 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "nuxt": "^3.14.159",
+    "obelisk.js": "https://github.com/nosir/obelisk.js.git",
     "vite-plugin-vuetify": "^2.0.4",
     "vue": "latest",
     "vue-router": "latest",
