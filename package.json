@@ -14,6 +14,7 @@
     "nuxt": "^3.14.159",
     "obelisk.js": "https://github.com/nosir/obelisk.js.git",
     "sass": "^1.81.0",
+    "skinview3d": "^3.1.0",
     "vite-plugin-vuetify": "^2.0.4",
     "@pinia/nuxt": "^0.7.0",
     "vue3-simple-icons": "^13.2.0",
