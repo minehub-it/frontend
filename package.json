@@ -1,0 +1,21 @@
+{
+  "name": "minehub-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "nuxt": "^3.14.159",
+    "vite-plugin-vuetify": "^2.0.4",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vuetify": "^3.7.4"
+  },
+  "packageManager": "yarn@4.5.1+sha256.dc2e45a77f87a9c2a76708d098ab54ca0cfdd5ec2cf7d9e3c1f24bf786a2383c"
+}
