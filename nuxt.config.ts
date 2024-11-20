@@ -1,10 +1,22 @@
 import vuetify, {transformAssetUrls} from 'vite-plugin-vuetify'
+import {createResolver} from '@nuxt/kit'
+
+const {resolve} = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
 
   srcDir: './src',
+
+  css: [
+    '@/assets/styles/index.scss',
+  ],
+
+  alias: {
+    '~': resolve(__dirname, '.'),
+    '@': resolve(__dirname, './src'),
+  },
 
   modules: [
     (_options, nuxt) => {
@@ -16,6 +28,7 @@ export default defineNuxtConfig({
       })
     },
     '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
   ],
 
   build: {
@@ -35,5 +48,9 @@ export default defineNuxtConfig({
         }
       }
     },
+  },
+
+  imports: {
+    dirs: ['stores','utils']
   },
 })
