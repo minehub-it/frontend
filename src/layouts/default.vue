@@ -1,7 +1,12 @@
 <template>
   <v-layout>
 
-    ciao sono un cubo
+    <MainHeader />
+
+    <v-main width="100%">
+      <NuxtPage/>
+      <MainFooter/>
+    </v-main>
 
   </v-layout>
 </template>
