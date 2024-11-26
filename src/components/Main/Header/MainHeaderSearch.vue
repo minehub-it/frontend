@@ -9,8 +9,8 @@ withDefaults(defineProps<{
 <template>
   <div :id="`${name}-main-header`" class="main-header">
     <!-- header top -->
-    <v-row class="my-0">
-      <v-col :cols="12" :sm="7" class="py-0 text-center text-sm-left">
+    <v-row class="mt-0 mb-0">
+      <v-col :cols="12" :sm="7" class="py-0 text-center text-sm-left" align-self="center">
         <slot name="logo"/>
       </v-col>
       <v-col :cols="12" :sm="4" class="py-0 offset-sm-1">
@@ -25,11 +25,11 @@ withDefaults(defineProps<{
     <!-- header categories -->
     <div class="main-header-categories">
       <!-- header categories / btn server-list -->
-      <div class="hidden-sm-and-down pa-1 pb-3 mb-4">
+      <v-card class="hidden-sm-and-down px-1 pt-5 pb-3 mb-6">
         <div class="main-header-categories-container">
           <slot name="categoriesWide"/>
         </div>
-      </div>
+      </v-card>
 
       <!-- header categories / dropdown select -->
       <slot name="categoriesSelect"/>

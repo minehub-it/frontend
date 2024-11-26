@@ -5,9 +5,13 @@
   color: #eee;
 }
 
+html {
+  font-size: 1.2rem !important;
+}
+
 html, body {
-  user-select: none;
   overflow: hidden !important;
+  user-select: none;
 }
 
 a {
@@ -29,7 +33,7 @@ ul {
 }
 
 .v-application {
-  font-family: Roboto,sans-serif;
+  //font-family: Roboto,sans-serif;
 
   &.v-theme--light {
     background: #fefefe !important;
@@ -43,6 +47,8 @@ ul {
 }
 
 .v-main {
+  overflow-y: scroll;
+
   > .v-container {
     min-height: calc(100vh - 133px);
   }
@@ -91,6 +97,7 @@ small {
 }
 
 .v-card {
+  border-radius: 16px !important;
   //box-shadow: 0 0 0 1px #f1f4ef !important;
   //border: 0 !important;
   //box-shadow: 0 3px 1px -2px rgb(0 0 0 / 2%), 0 2px 2px 0 rgb(0 0 0 / 2%), 0 1px 5px 0 rgb(0 0 0 / 15%) !important;
@@ -111,7 +118,6 @@ $border-color: #e8e8e8;
 .v-banner {
   border: 0 !important;
   box-shadow: 0 0 0 1px var(--v-border-color) !important;
-  border-radius: 4px !important;
 }
 
 .v-table--density-default > .v-table__wrapper > table > tbody > tr > th, .v-table--density-default > .v-table__wrapper > table > thead > tr > th, .v-table--density-default > .v-table__wrapper > table > tfoot > tr > th,
