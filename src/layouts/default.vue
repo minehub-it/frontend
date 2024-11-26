@@ -1,7 +1,7 @@
 <template>
   <v-layout>
 
-    <MainHeader />
+    <MainNav />
 
     <v-main width="100%" max-height="100dvh" class="overflow-y-auto">
       <NuxtPage/>
