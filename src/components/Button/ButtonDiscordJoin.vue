@@ -10,7 +10,7 @@ import {DiscordIcon} from "vue3-simple-icons";
 
     <DiscordIcon width="32px" fill="white" />
     <v-tooltip activator="parent" :location="$vuetify.display.smAndDown ? 'bottom' : 'end'">
-      Unisciti ad oltre 45.000 giocatori
+      Unisciti ad oltre 30.000 giocatori
     </v-tooltip>
 
   </v-btn>
