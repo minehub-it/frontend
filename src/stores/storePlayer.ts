@@ -10,5 +10,5 @@ export const usePlayerStore = defineStore('player', () => {
     setPlayerName,
   }
 }, {
-  persist: true
+  persist: piniaPluginPersistedstate.cookies()
 })
