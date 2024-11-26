@@ -7,6 +7,7 @@
 
 html, body {
   user-select: none;
+  overflow: hidden !important;
 }
 
 a {
@@ -81,14 +82,18 @@ small {
   font-size: 12px !important;
 }
 
+.v-application__wrap {
+  //min-height: auto !important;
+}
+
 .v-btn {
   letter-spacing: 0 !important;
 }
 
-.v-card--variant-elevated {
+.v-card {
   //box-shadow: 0 0 0 1px #f1f4ef !important;
   //border: 0 !important;
-  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 2%), 0 2px 2px 0 rgb(0 0 0 / 2%), 0 1px 5px 0 rgb(0 0 0 / 15%) !important;
+  //box-shadow: 0 3px 1px -2px rgb(0 0 0 / 2%), 0 2px 2px 0 rgb(0 0 0 / 2%), 0 1px 5px 0 rgb(0 0 0 / 15%) !important;
 }
 
 .v-main > .v-container {

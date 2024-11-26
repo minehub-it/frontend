@@ -13,7 +13,7 @@ function onPlayerSkinClick() {
 <template>
   <client-only>
     <div
-        class="d-inline-block text-black"
+        class="d-inline-block"
         @click="onPlayerSkinClick"
     >
       <PlayerSkin

@@ -1,7 +1,9 @@
 <template>
-  <div class="text-center">
-    <HomeHeroIntro />
-  </div>
+  <v-row no-gutters class="text-center fill-height">
+    <v-col class="flex align-content-center fill-height">
+      <HomeHeroIntro />
+    </v-col>
+  </v-row>
 </template>
 
 <script setup lang="ts">

@@ -3,9 +3,8 @@
 
     <MainHeader />
 
-    <v-main width="100%">
+    <v-main width="100%" max-height="100dvh" class="overflow-y-auto">
       <NuxtPage/>
-      <MainFooter/>
     </v-main>
 
   </v-layout>
