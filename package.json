@@ -2,6 +2,7 @@
   "name": "minehub-frontend",
   "private": true,
   "type": "module",
+  "version": "7.0.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -20,6 +21,7 @@
     "axios": "^1.7.7",
     "idb": "^8.0.0",
     "nuxt": "^3.14.159",
+    "nuxt-swiper": "^1.2.2",
     "obelisk.js": "https://github.com/nosir/obelisk.js.git",
     "pinia": "^2.2.6",
     "pinia-plugin-persistedstate": "^4.1.3",
