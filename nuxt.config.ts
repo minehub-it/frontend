@@ -11,6 +11,8 @@ export default defineNuxtConfig({
 
   css: [
     '@/assets/styles/index.scss',
+    'swiper/css',
+    'swiper/css/pagination',
   ],
 
   alias: {
@@ -30,6 +32,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxt/fonts',
+    'nuxt-swiper',
     'pinia-plugin-persistedstate/nuxt',
   ],
 

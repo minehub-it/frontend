@@ -28,14 +28,14 @@
       </p>
 
       <div class="mt-8">
-        <v-sheet :max-width="480" class="mx-auto" color="transparent">
+        <v-sheet :max-width="520" class="mx-auto" color="transparent">
           <v-row no-gutters>
-            <v-col align-self="center" :cols="12" :sm="9">
+            <v-col align-self="center" :cols="12" :sm="7">
 
               <ButtonDiscordJoin />
 
             </v-col>
-            <v-col align-self="center" :cols="12" :sm="3" class="pt-2 pt-sm-0">
+            <v-col align-self="center" :cols="12" :sm="5" class="pt-2 pt-sm-0">
 
               <div class="minehub-subscriptions">
 

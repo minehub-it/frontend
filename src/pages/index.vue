@@ -1,9 +1,16 @@
 <template>
-  <v-row no-gutters class="text-center fill-height">
-    <v-col class="flex align-content-center fill-height">
-      <HomeHeroIntro />
-    </v-col>
-  </v-row>
+  <SliderVertical class="text-center">
+    <swiper-slide>
+      <SliderVerticalSlideContainer>
+        <HomeHeroIntro />
+      </SliderVerticalSlideContainer>
+    </swiper-slide>
+    <swiper-slide>
+      <SliderVerticalSlideContainer>
+        <HomeHeroSponsor />
+      </SliderVerticalSlideContainer>
+    </swiper-slide>
+  </SliderVertical>
 </template>
 
 <script setup lang="ts">

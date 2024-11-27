@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <v-btn
       icon flat :ripple="false"
-      :width="40" :min-width="36"
+      :width="16" :min-width="16"
       size="x-large"
       color="transparent" class="px-4"
       :href="patreonCheckoutLink(id)"
