@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import {links} from "@/const";
 </script>
 
 <template>

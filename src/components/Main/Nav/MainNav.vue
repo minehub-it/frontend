@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {DiscordIcon, PatreonIcon} from "vue3-simple-icons";
-import {links} from "@/const";
 </script>
 
 <template>

@@ -60,6 +60,6 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['stores','utils']
+    dirs: ['api', 'const', 'stores','utils']
   },
 })
