@@ -11,7 +11,7 @@ import {links} from "@/const";
     <v-list class="mx-3">
 
       <v-list-item class="mb-5">
-        <nuxt-link to="/">
+        <nuxt-link class="d-inline-block" to="/">
           <Logo :size="48"/>
         </nuxt-link>
       </v-list-item>
