@@ -93,6 +93,8 @@
 
 <style scoped lang="scss">
 .minehub-block-home-hero {
-  min-height: calc(100vh - 72px - 112px) !important;
+  a {
+    opacity: 0.55;
+  }
 }
 </style>
