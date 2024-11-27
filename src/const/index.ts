@@ -19,3 +19,14 @@ export const links = {
         android: 'https://play.google.com/store/apps/developer?id=GameAssist'
     }
 }
+
+export const platforms = {
+    je: {
+        name: 'Java',
+        slug: 'je'
+    },
+    be: {
+        name: 'Bedrock',
+        slug: 'be'
+    }
+}
