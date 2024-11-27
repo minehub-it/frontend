@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const app = useAppConfig()
+import {links} from "@/const";
 </script>
 
 <template>
-  <v-footer absolute inset height="auto" class="px-0 py-2 text-center">
+  <v-footer height="auto" class="px-0 py-2 mb-5 text-center">
     <v-container grid-list-md class="pa-0 px-1">
       <v-card-text>
         <p class="ma-0 text-center">
           &copy; {{ new Date().getFullYear() }} MineHub /
-          <a :href="app.links.gameassist.android" target="_blank">GameAssist</a>
+          <a :href="links.gameassist.android" target="_blank">GameAssist</a>
         </p>
       </v-card-text>
     </v-container>
@@ -37,18 +37,12 @@ const app = useAppConfig()
     sup {
       opacity: 0.4;
     }
-    a {
-      color: #656565;
-    }
   }
   &.v-theme--light {
     sup {
       opacity: 0.6;
     }
-    a {
-      color: #999999;
-    }
-    p {
+    a, p {
       color: #5f5f5f;
     }
   }

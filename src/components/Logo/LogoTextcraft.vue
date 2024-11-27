@@ -44,7 +44,7 @@ const imageAlt = computed(() => {
   }
 
   #serverlist-logo {
-    width: 400px;
+    width: 380px;
     background-image: url('/logo/serverlist.png');
   }
 

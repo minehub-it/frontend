@@ -37,7 +37,11 @@ import {links} from "@/const";
         Featured
       </v-list-item>
 
-      <v-list-item rounded to="/lista-server-java-edition">
+      <v-list-item
+          rounded
+          to="/lista-server-java-edition"
+          :active="$route.name.startsWith('lista-server-java-edition')"
+      >
         <template #prepend>
           <v-icon icon="mdi-server" :size="32" style="margin-left: 2px;"/>
         </template>

@@ -9,11 +9,11 @@ withDefaults(defineProps<{
 <template>
   <div :id="`${name}-main-header`" class="main-header">
     <!-- header top -->
-    <v-row class="mt-0 mb-0">
-      <v-col :cols="12" :sm="7" class="py-0 text-center text-sm-left" align-self="center">
+    <v-row class="mt-6 mb-3">
+      <v-col :cols="12" :lg="7" class="py-0" align-self="center">
         <slot name="logo"/>
       </v-col>
-      <v-col :cols="12" :sm="4" class="py-0 offset-sm-1">
+      <v-col :cols="12" :lg="4" class="py-0 offset-sm-1 hidden-md-and-down">
         <div class="hidden-sm-and-up mt-3"/>
         <div class="main-header-search">
           <!-- header autocomplete -->
@@ -44,6 +44,18 @@ withDefaults(defineProps<{
   > div.layout:first-child {
     @media (min-width: 559px) {
       height: 48px;
+    }
+  }
+
+  .logo {
+    margin-right: 24px;
+
+    @media(max-width: 1279px) {
+      display: block;
+
+      .logo-image {
+        margin: 0 auto;
+      }
     }
   }
 

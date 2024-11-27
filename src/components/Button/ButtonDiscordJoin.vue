@@ -3,7 +3,7 @@ import {DiscordIcon} from "vue3-simple-icons";
 </script>
 
 <template>
-  <v-btn class="bg-discord text-white px-4" flat size="large" min-height="56px">
+  <v-btn class="bg-discord text-white px-4" flat rounded size="large" min-height="56px">
     Collegati a Discord
 
     <v-divider vertical class="mx-4" style="height: 56px;" />
