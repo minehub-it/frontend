@@ -1,0 +1,7 @@
+services:
+  client:
+    container_name: minehub-client
+    build: .
+    restart: unless-stopped
+    ports:
+      - 3000:3000
