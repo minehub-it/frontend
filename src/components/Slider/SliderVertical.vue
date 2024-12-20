@@ -5,7 +5,6 @@ import {Mousewheel} from "swiper/modules";
 <template>
   <swiper
       direction="vertical"
-      :slide-per-view="1"
       mousewheel
       :modules="[Mousewheel]"
       class="minehub-slider-vertical fill-height"

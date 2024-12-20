@@ -6,7 +6,7 @@
     <v-container grid-list-md class="pa-0 px-1">
       <v-card-text>
         <p class="ma-0 text-center">
-          &copy; {{ new Date().getFullYear() }} MineHub /
+          &copy; {{ new Date().getFullYear() }} MineHub —
           <a :href="links.gameassist.android" target="_blank">GameAssist</a>
         </p>
       </v-card-text>

@@ -100,13 +100,13 @@ import {DiscordIcon, PatreonIcon} from "vue3-simple-icons";
 
 .v-list {
   display: inline-block;
-  font-size: 24px;
+  font-size: 21px;
 
   &-item {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
 
-    &__prepend {
+    :deep(.v-list-item__prepend) {
       min-width: 70px;
     }
 

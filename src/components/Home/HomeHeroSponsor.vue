@@ -30,12 +30,12 @@
               Ora oltre a
               <a href="https://discord.com/channels/522487914303586315/1089376973945581578" target="_blank" ref="nofollow">#promo-server</a> puoi promuovere il tuo server
               sul sito nella <nuxt-link to="/lista-server-java-edition">lista server</nuxt-link>
-              col piano Premium o nella sezione <nuxt-link to="/featured">Featured</nuxt-link> (aziende e brand)
+              col piano Premium o nella sezione <nuxt-link to="/featured">Featured</nuxt-link> (brand e aziende)
             </p>
 
             <v-btn
                 class="mt-5" size="large" flat rounded
-                :href="patreonCheckoutLink(6990444)" target="_blank"
+                :href="patreonCheckoutLink(7876947)" target="_blank"
             >
               Per chi fa sul serio
             </v-btn>
@@ -56,7 +56,7 @@
 
             <v-btn
                 class="mt-5" size="large" flat rounded
-                :href="patreonCheckoutLink(6990444)" target="_blank"
+                :href="patreonCheckoutLink(7295814)" target="_blank"
             >
               Per tutti i gigachad
             </v-btn>
@@ -72,7 +72,7 @@
 
             <v-btn
                 class="mt-5" size="large" flat rounded
-                :href="patreonCheckoutLink(6990444)" target="_blank"
+                :href="patreonCheckoutLink(9897833)" target="_blank"
             >
               Diventa partner
             </v-btn>
@@ -94,7 +94,7 @@
 <style scoped lang="scss">
 .minehub-block-home-hero {
   a {
-    opacity: 0.55;
+    opacity: 0.70;
   }
 }
 </style>

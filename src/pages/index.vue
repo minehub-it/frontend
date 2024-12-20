@@ -1,5 +1,5 @@
 <template>
-  <SliderVertical class="text-center">
+  <SliderVertical class="text-center" :slide-per-view="1">
     <swiper-slide>
       <SliderVerticalSlideContainer>
         <HomeHeroIntro />
