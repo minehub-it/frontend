@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   },
 
   extends: [
-    './layer-server',
+    'github:minehub-it/frontend-layer-server',
   ],
 
   build: {
