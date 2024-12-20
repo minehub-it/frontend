@@ -36,6 +36,17 @@ export default defineNuxtConfig({
     'pinia-plugin-persistedstate/nuxt',
   ],
 
+  routeRules: {
+    '/': { prerender: true },
+    '/preferiti': { ssr: true },
+    '/featured': { prerender: true },
+    '/lista-server-java-edition': { swr: 3600 },
+    '/lista-server-bedrock-edition': { swr: 3600 },
+    '/api/**': { cors: true },
+    '/patreon': { redirect: 'https://patreon.com/minecraftit' },
+    '/discord': { redirect: 'https://patreon.com/minecraftit' }
+  },
+
   extends: [
     './layer-server',
   ],
