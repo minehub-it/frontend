@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     '/lista-server-bedrock-edition': { swr: 3600 },
     '/api/**': { cors: true },
     '/patreon': { redirect: 'https://patreon.com/minecraftit' },
-    '/discord': { redirect: 'https://patreon.com/minecraftit' }
+    '/discord': { redirect: 'https://discord.com/invite/minecraft-italia-522487914303586315' }
   },
 
   extends: [
