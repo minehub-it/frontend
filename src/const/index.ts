@@ -5,7 +5,7 @@ export const endpoints = {
     },
     prod: {
         appBaseUrl: "https://minecraft-italia.it/",
-        apiBaseUrl: "https://api.minecraft-italia.it/",
+        apiBaseUrl: "/",
     }
 }
 
