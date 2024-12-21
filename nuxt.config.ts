@@ -32,7 +32,6 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxt/fonts',
-    'nuxt-swiper',
     'pinia-plugin-persistedstate/nuxt',
   ],
 
@@ -48,11 +47,17 @@ export default defineNuxtConfig({
   },
 
   extends: [
-    'github:minehub-it/frontend-layer-server',
+    './frontend-layer-server',
   ],
 
   build: {
     transpile: ['vuetify'],
+  },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => ['swiper-container', 'swiper-slide'].includes(tag),
+    },
   },
 
   vite: {

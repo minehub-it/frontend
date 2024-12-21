@@ -3,13 +3,12 @@ import {Mousewheel} from "swiper/modules";
 </script>
 
 <template>
-  <swiper
+  <swiper-container
       direction="vertical"
       mousewheel
       :modules="[Mousewheel]"
       class="minehub-slider-vertical fill-height"
-      style="max-height: 100dvh;"
   >
     <slot />
-  </swiper>
+  </swiper-container>
 </template>

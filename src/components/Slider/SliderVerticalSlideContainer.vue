@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="fill-height d-flex align-center">
+  <div class="d-flex align-center">
     <slot />
   </div>
 </template>
@@ -10,5 +10,6 @@
 <style scoped lang="scss">
 div {
   display: grid !important;
+  height: 100dvh;
 }
 </style>
