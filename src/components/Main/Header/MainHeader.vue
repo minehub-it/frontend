@@ -20,23 +20,25 @@ const appStore = useAppStore()
                 class="cursor-pointer"
                 @click="appStore.toggleNavigationDrawer"
             >
-              <v-icon icon="mdi-menu" :size="32" />
+              <v-icon icon="mdi-menu" :size="32"/>
             </v-breadcrumbs-item>
           </v-breadcrumbs>
 
         </v-col>
         <v-col :cols="6" class="text-center" align-self="center">
 
-          <client-only>
-            <Logo :key="$route.name" name="header" :size="36" />
-          </client-only>
+          <nuxt-link to="/">
+            <client-only>
+              <Logo :key="$route.name" name="header" :size="36"/>
+            </client-only>
+          </nuxt-link>
 
         </v-col>
         <v-col :cols="3" class="text-right" align-self="center">
 
           <v-breadcrumbs class="float-right mr-n3">
             <v-breadcrumbs-item href="/discord" target="_blank">
-              <DiscordIcon class="minehub-icon--discord" style="width: 25px; height: 25px; margin-top: 5px;" />
+              <DiscordIcon class="minehub-icon--discord" style="width: 25px; height: 25px; margin-top: 5px;"/>
             </v-breadcrumbs-item>
           </v-breadcrumbs>
 
@@ -80,6 +82,7 @@ header.v-app-bar {
             height: 25px;
             vertical-align: -6px;
           }
+
           &--patreon {
             width: 17px;
             height: 17px;
