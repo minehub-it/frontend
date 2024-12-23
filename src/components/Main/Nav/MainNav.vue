@@ -1,17 +1,35 @@
 <script setup lang="ts">
 import {DiscordIcon, PatreonIcon} from "vue3-simple-icons";
+import {useDisplay} from "vuetify";
+
+const appStore = useAppStore()
+const display = useDisplay()
+
+onMounted(() => {
+  appStore.navigationDrawer = display.smAndUp.value
+})
+
+function onNavContentClick() {
+  if (display.mdAndUp.value) {
+    return false
+  }
+
+  appStore.toggleNavigationDrawer()
+}
 </script>
 
 <template>
   <v-navigation-drawer
-      absolute permanent
+      v-model="appStore.navigationDrawer"
+      floating
+      :mobile-breakpoint="960"
       :width="300"
   >
-    <v-list class="mx-3">
+    <v-list class="mx-3" @click="onNavContentClick">
 
       <v-list-item class="mb-5">
         <nuxt-link class="d-inline-block" to="/">
-          <Logo :size="48"/>
+          <Logo name="nav" :size="48"/>
         </nuxt-link>
       </v-list-item>
 
@@ -78,6 +96,7 @@ import {DiscordIcon, PatreonIcon} from "vue3-simple-icons";
 
 <style scoped lang="scss">
 .v-navigation-drawer {
+  position: fixed !important;
   border-color: rgba(0, 0, 0, 0.1);
 
   :deep(.v-navigation-drawer__content) {
