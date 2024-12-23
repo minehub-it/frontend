@@ -9,7 +9,7 @@ withDefaults(defineProps<{
 <template>
   <div :id="`${name}-main-header`" class="main-header">
     <!-- header top -->
-    <v-row class="mt-6 mb-3">
+    <v-row class="mt-0 mt-md-6 mb-3 hidden-sm-and-down">
       <v-col :cols="12" :lg="7" class="py-0" align-self="center">
         <slot name="logo"/>
       </v-col>
@@ -25,14 +25,17 @@ withDefaults(defineProps<{
     <!-- header categories -->
     <div class="main-header-categories">
       <!-- header categories / btn server-list -->
-      <v-card class="hidden-sm-and-down px-1 pt-5 pb-3 mb-6">
+      <v-card rounded class="hidden-sm-and-down px-1 pt-5 pb-3 mb-6">
         <div class="main-header-categories-container">
           <slot name="categoriesWide"/>
         </div>
       </v-card>
 
       <!-- header categories / dropdown select -->
-      <slot name="categoriesSelect"/>
+      <v-card rounded class="hidden-md-and-up mb-5">
+        <slot name="categoriesSelect"/>
+      </v-card>
+
     </div>
   </div>
 </template>
@@ -101,11 +104,6 @@ withDefaults(defineProps<{
         min-width: 72px;
         padding: 0 15px;
       }
-    }
-
-    // margine tra header e categorie
-    @media (min-width: 600px) {
-      margin-top: 16px !important;
     }
 
     // miglioramenti su border-radius da mobile

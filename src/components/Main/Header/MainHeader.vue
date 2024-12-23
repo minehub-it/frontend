@@ -1,37 +1,47 @@
 <script setup lang="ts">
 import {DiscordIcon, PatreonIcon} from "vue3-simple-icons";
 
-const appConfig = useAppConfig()
+const appStore = useAppStore()
 </script>
 
 <template>
   <v-app-bar
-      class="position-fixed" color="transparent"
+      color="transparent"
       :float="false" :extended="false"
-      :height="88"
-      flat
+      :height="88" flat
   >
 
-    <v-app-bar-title>
-      <v-breadcrumbs class="d-inline-block py-0 mx-auto">
-        <v-breadcrumbs-item>
-          <nuxt-link to="/">
-            <Logo :size="32" />
-          </nuxt-link>
-        </v-breadcrumbs-item>
-        <v-breadcrumbs-item to="/lista-server-java-edition">
-          Servers Java
-        </v-breadcrumbs-item>
-        <v-breadcrumbs-item to="/lista-server-bedrock-edition">
-          Servers Bedrock
-        </v-breadcrumbs-item>
-        <v-breadcrumbs-item href="/discord" target="_blank">
-          <DiscordIcon class="minehub-icon--discord" />
-        </v-breadcrumbs-item>
-        <v-breadcrumbs-item :href="appConfig.links.patreon" target="_blank">
-          <PatreonIcon class="minehub-icon--patreon" />
-        </v-breadcrumbs-item>
-      </v-breadcrumbs>
+    <v-app-bar-title class="px-2">
+      <v-row>
+        <v-col :cols="3" align-self="center">
+
+          <v-breadcrumbs class="ml-1">
+            <v-breadcrumbs-item
+                class="cursor-pointer"
+                @click="appStore.toggleNavigationDrawer"
+            >
+              <v-icon icon="mdi-menu" :size="32" />
+            </v-breadcrumbs-item>
+          </v-breadcrumbs>
+
+        </v-col>
+        <v-col :cols="6" class="text-center" align-self="center">
+
+          <client-only>
+            <Logo :key="$route.name" name="header" :size="36" />
+          </client-only>
+
+        </v-col>
+        <v-col :cols="3" class="text-right" align-self="center">
+
+          <v-breadcrumbs class="float-right mr-n3">
+            <v-breadcrumbs-item href="/discord" target="_blank">
+              <DiscordIcon class="minehub-icon--discord" style="width: 25px; height: 25px; margin-top: 5px;" />
+            </v-breadcrumbs-item>
+          </v-breadcrumbs>
+
+        </v-col>
+      </v-row>
     </v-app-bar-title>
 
   </v-app-bar>
@@ -40,18 +50,13 @@ const appConfig = useAppConfig()
 <style lang="scss">
 header.v-app-bar {
   transition: all 0.3s ease-in-out;
+  background: rgba(var(--v-theme-background), 0.9) !important;
+  backdrop-filter: blur(32px);
   box-shadow: none !important;
+  z-index: 100 !important;
 
   .v-toolbar-title {
-    position: fixed;
-    top: 16px !important;
-    left: 50% !important;
-    transform: translateX(-50%);
-    max-width: 720px;
-    backdrop-filter: blur(22px);
-    background: rgba(255, 255, 255, 0.33);
-    border-radius: 128px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    width: 100vw;
 
     canvas {
       vertical-align: -9px;
