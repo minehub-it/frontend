@@ -25,10 +25,10 @@ html {
     --v-theme-palette-background-darker: #1e1f22;
     --v-theme-header: 30 31 34;
     --v-theme-navigation: var(--v-theme-palette-dark-xx);
-    --v-theme-surface: 49 51 56;
+    --v-theme-surface: 49, 51, 56;
     --v-theme-palette-background-medium: #2b2d31;
     --v-theme-palette-background: #313338;
-    --v-theme-background: 40 42 46;
+    --v-theme-background: 40, 42, 46;
     --v-border-color: #282828;
 
     &.v-overlay .v-overlay__scrim {

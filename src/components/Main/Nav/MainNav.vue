@@ -40,7 +40,7 @@ function onNavContentClick() {
         Home
       </v-list-item>
 
-      <v-list-item rounded to="/preferiti">
+      <v-list-item rounded to="/preferiti" class="hidden-sm-and-down">
         <template #prepend>
           <v-icon icon="mdi-star" :size="32" style="margin-left: 2px;"/>
         </template>
@@ -60,7 +60,7 @@ function onNavContentClick() {
           :active="$route.name.startsWith('lista-server-java-edition')"
       >
         <template #prepend>
-          <v-icon icon="mdi-server" :size="32" style="margin-left: 2px;"/>
+          <v-icon icon="mdi-server" :size="30" style="margin-left: 2px;"/>
         </template>
         Servers
       </v-list-item>

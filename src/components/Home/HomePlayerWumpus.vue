@@ -13,7 +13,7 @@ function onPlayerSkinClick() {
 <template>
   <client-only>
     <div
-        class="d-inline-block"
+        class="minehub-home__player-wumpus d-inline-block"
         @click="onPlayerSkinClick"
     >
       <PlayerSkin
@@ -26,5 +26,9 @@ function onPlayerSkinClick() {
 </template>
 
 <style scoped lang="scss">
-
+.minehub-home__player-wumpus {
+  @media(max-width: 479px) {
+    transform: scale(0.8);
+  }
+}
 </style>

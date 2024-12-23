@@ -1,9 +1,5 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div class="minehub-block-home">
+  <div class="minehub-block-home px-6 mt-10 mt-md-0">
     <div class="minehub-skin-mobile">
       <div class="minehub-skin-mobile__inner">
         <HomePlayerWumpus
@@ -13,21 +9,27 @@
       <v-divider class="mx-auto"/>
     </div>
 
-    <div class="mt-16">
+    <div class="mt-10 mt-md-16">
 
       <div class="text-h3">
         Scopri nuove <span>avventure</span>
       </div>
 
       <p class="text-large pt-10">
-        Prendi parte alla nostra community e scopri un mondo di opportunità
-        <br class="hidden-sm-and-down"/>
-        trovando giocatori e partite in corso su Minecraft: Java e Bedrock Edition!
-        <br class="hidden-sm-and-down"/>
-        Il nostro storico forum si è spostato nel 2020 e si trova ora su Discord
+        Prendi parte alla nostra community
+        <br class="hidden-sm-and-up"/>
+        e scopri un mondo di opportunità
+        <br />
+        trovando giocatori e partite in corso su
+        <br class="hidden-sm-and-up"/>
+        Minecraft: Java e Bedrock Edition!
+        <br/>
+        Il nostro storico forum si è spostato
+        <br class="hidden-sm-and-up"/>
+        nel 2020 e si trova ora su Discord
       </p>
 
-      <div class="mt-8">
+      <div class="mt-8 hidden-sm-and-down">
         <v-sheet :max-width="520" class="mx-auto" color="transparent">
           <v-row no-gutters>
             <v-col align-self="center" :cols="12" :sm="7">
@@ -129,6 +131,10 @@
       position: relative;
       overflow: hidden;
       height: 180px;
+
+      @media(max-width: 479px) {
+        height: 160px;
+      }
     }
 
     .v-divider {

@@ -6,7 +6,11 @@
 }
 
 html {
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
+
+  @media(max-width: 479px) {
+    font-size: 0.8rem !important;
+  }
 }
 
 html, body {
@@ -48,10 +52,20 @@ ul {
 
 .v-main {
   overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 
   > .v-container {
     min-height: calc(100vh - 133px);
   }
+
+  @media(max-width: 959px) {
+    padding-top: 88px !important;
+  }
+}
+
+.v-layout {
+  z-index: inherit !important;
 }
 
 .v-btn--icon {
@@ -61,6 +75,16 @@ ul {
 .v-toolbar__content > .v-toolbar-title {
   margin-inline-start: inherit !important;
 }
+
+.v-snackbar {
+  margin-bottom: 16px;
+
+  * {
+    text-align: center;
+    font-size: 16px !important;
+  }
+}
+
 .v-overlay {
   .v-overlay__content {
     .v-card-text {
@@ -259,6 +283,10 @@ $border-color: #e8e8e8;
 .text-large {
   font-size: 20px;
   opacity: 0.5;
+
+  @media(max-width: 799px) {
+    font-size: 18px;
+  }
 }
 
 :root {

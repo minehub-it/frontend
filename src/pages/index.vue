@@ -16,7 +16,7 @@ useServerSeoMeta({
         <HomeHeroIntro />
       </SliderVerticalSlideContainer>
     </swiper-slide>
-    <swiper-slide>
+    <swiper-slide class="hidden-xs">
       <SliderVerticalSlideContainer>
         <HomeHeroSponsor />
       </SliderVerticalSlideContainer>
