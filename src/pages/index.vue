@@ -10,7 +10,7 @@ useServerSeoMeta({
 </script>
 
 <template>
-  <SliderVertical class="text-center" :slide-per-view="1">
+  <SliderVertical class="text-center fill-height" :slide-per-view="1">
     <swiper-slide>
       <SliderVerticalSlideContainer>
         <HomeHeroIntro />
