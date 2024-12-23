@@ -8,11 +8,11 @@ const appStore = useAppStore()
   <v-app-bar
       color="transparent"
       :float="false" :extended="false"
-      :height="88" flat
+      :height="76" flat
   >
 
     <v-app-bar-title class="px-2">
-      <v-row>
+      <v-row no-gutters>
         <v-col :cols="3" align-self="center">
 
           <v-breadcrumbs class="ml-1">
@@ -50,8 +50,7 @@ const appStore = useAppStore()
 <style lang="scss">
 header.v-app-bar {
   transition: all 0.3s ease-in-out;
-  background: rgba(var(--v-theme-background), 0.9) !important;
-  backdrop-filter: blur(32px);
+  background: rgb(var(--v-theme-background)) !important;
   box-shadow: none !important;
   z-index: 100 !important;
 
@@ -77,9 +76,9 @@ header.v-app-bar {
 
         &.minehub-icon {
           &--discord {
-            width: 22px;
-            height: 22px;
-            vertical-align: -5px;
+            width: 25px;
+            height: 25px;
+            vertical-align: -6px;
           }
           &--patreon {
             width: 17px;
