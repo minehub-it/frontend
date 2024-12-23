@@ -1,5 +1,5 @@
 <template>
-  <div class="minehub-block-home px-6 mt-10 mt-md-0">
+  <div class="minehub-block-home px-6 mt-n7 mt-md-0">
     <div class="minehub-skin-mobile">
       <div class="minehub-skin-mobile__inner">
         <HomePlayerWumpus

@@ -10,6 +10,6 @@
 <style scoped lang="scss">
 div {
   display: grid !important;
-  height: 100dvh;
+  height: 100%;
 }
 </style>
