@@ -84,10 +84,19 @@ function onNavContentClick() {
       <v-list-item rounded :href="links.patreon" target="_blank">
         <template #prepend>
           <v-icon>
-            <PatreonIcon :width="26" :height="26"/>
+            <PatreonIcon :size="25"/>
           </v-icon>
         </template>
         Patreon
+      </v-list-item>
+
+      <v-list-item rounded to="/about">
+        <template #prepend>
+          <v-icon>
+            <v-icon icon="mdi-cube-outline" :size="31" style="margin-left: 2px;"/>
+          </v-icon>
+        </template>
+        About
       </v-list-item>
 
     </v-list>

@@ -15,6 +15,7 @@ export const links = {
         lobby: 'https://discord.com/channels/522487914303586315/1068926288200478810'
     },
     patreon: 'https://patreon.com/minecraftit',
+    github: 'https://github.com/minehub-it',
     gameassist: {
         android: 'https://play.google.com/store/apps/developer?id=GameAssist'
     }
