@@ -58,13 +58,13 @@ useServerSeoMeta({
         />
 
         <v-breadcrumbs class="mx-auto">
-          <v-breadcrumbs-item class="mx-1" :href="links.github" target="_blank">
+          <v-breadcrumbs-item class="mx-1" v-bind="externalUrlProps(links.github)">
             <GitHubIcon :size="22"/>
           </v-breadcrumbs-item>
-          <v-breadcrumbs-item class="mx-1" :href="links.discord.server" target="_blank">
+          <v-breadcrumbs-item class="mx-1" v-bind="externalUrlProps(links.discord.server)">
             <DiscordIcon :size="28"/>
           </v-breadcrumbs-item>
-          <v-breadcrumbs-item class="mx-1" :href="links.patreon" target="_blank">
+          <v-breadcrumbs-item class="mx-1" v-bind="externalUrlProps(links.patreon)">
             <PatreonIcon :size="21"/>
           </v-breadcrumbs-item>
         </v-breadcrumbs>

@@ -12,7 +12,7 @@ const href = `https://github.com/${props.organization}/${props.repository}`
 </script>
 
 <template>
-  <v-card class="pa-5 mt-4" :href="href" target="_blank">
+  <v-card class="pa-5 mt-4" v-bind="externalUrlProps(href)">
     <v-row>
       <v-col class="flex-grow-0">
 

@@ -65,14 +65,14 @@ function onNavContentClick() {
         Servers
       </v-list-item>
 
-      <v-list-item rounded :href="links.discord.lobby" target="_blank">
+      <v-list-item rounded v-bind="externalUrlProps(links.discord.lobby)">
         <template #prepend>
           <v-icon icon="mdi-controller" :size="30" style="margin-left: 2px;"/>
         </template>
         Giocatori
       </v-list-item>
 
-      <v-list-item rounded :href="links.discord.server" target="_blank">
+      <v-list-item rounded v-bind="externalUrlProps(links.discord.server)">
         <template #prepend>
           <v-icon>
             <DiscordIcon/>
@@ -81,7 +81,7 @@ function onNavContentClick() {
         Discord
       </v-list-item>
 
-      <v-list-item rounded :href="links.patreon" target="_blank">
+      <v-list-item rounded v-bind="externalUrlProps(links.patreon)">
         <template #prepend>
           <v-icon>
             <PatreonIcon :size="25"/>

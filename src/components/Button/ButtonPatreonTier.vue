@@ -11,8 +11,7 @@ defineProps<{
       :width="16" :min-width="16"
       size="x-large"
       color="transparent" class="px-4"
-      :href="patreonCheckoutLink(id)"
-      target="_blank"
+      v-bind="externalUrlProps(patreonCheckoutLink(id))"
   >
     <slot name="icon" />
     <v-tooltip activator="parent" :text="title" location="bottom" />

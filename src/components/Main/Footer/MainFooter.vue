@@ -7,7 +7,7 @@
       <v-card-text>
         <p class="ma-0 text-center">
           &copy; {{ new Date().getFullYear() }} MineHub —
-          <a :href="links.gameassist.android" target="_blank">GameAssist</a>
+          <a v-bind="externalUrlProps(links.gameassist.android)">GameAssist</a>
         </p>
       </v-card-text>
     </v-container>
