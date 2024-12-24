@@ -33,7 +33,7 @@ useServerSeoMeta({
           </p>
         </v-card>
 
-        <GitRepository
+        <GitRepo
             title="MineHub Web Client"
             organization="minehub-it"
             repository="frontend"
@@ -41,7 +41,7 @@ useServerSeoMeta({
             class="mt-4"
         />
 
-        <GitRepository
+        <GitRepo
             title="MineHub – Server Layer"
             organization="minehub-it"
             repository="server-layer"
@@ -49,7 +49,7 @@ useServerSeoMeta({
             class="mt-4"
         />
 
-        <GitRepository
+        <GitRepo
             title="MineHub – Server List"
             organization="minehub-it"
             repository="server-list"
