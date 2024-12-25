@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     '/featured': { prerender: true },
     '/lista-server-java-edition': { swr: 3600 },
     '/lista-server-bedrock-edition': { swr: 3600 },
+    '/about': { swr: 3600 * 3 },
     '/api/**': { cors: true, ssr: false },
     '/patreon': { redirect: 'https://patreon.com/minecraftit' },
     '/discord': { redirect: 'https://discord.com/invite/minecraft-italia-522487914303586315' }
