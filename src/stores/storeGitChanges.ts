@@ -22,9 +22,11 @@ export const useGitFeedStore = defineStore('git/feed', () => {
 
             const commitsData = await Promise.all(responses.map(response => response.json()))
 
-            commits.value = [...commitsData[0], ...commitsData[1]].sort((a, b) =>
-                new Date(b.commit.committer.date) - new Date(a.commit.committer.date)
-            )
+            commits.value = commitsData
+                .flat()
+                .sort((a, b) =>
+                    new Date(b.commit.committer.date) - new Date(a.commit.committer.date)
+                )
         } catch (err) {
             error.value = err.message || 'Errore sconosciuto'
             console.error(err)
@@ -33,5 +35,5 @@ export const useGitFeedStore = defineStore('git/feed', () => {
         }
     }
 
-    return { commits, isLoading, error, fetchCommits }
+    return {commits, isLoading, error, fetchCommits}
 })
