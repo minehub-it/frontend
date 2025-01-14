@@ -31,7 +31,7 @@ const authorProps = {
 
         <a v-bind="authorProps">
           <v-avatar
-              :size="36" class="mr-3"
+              :size="36" class="ml-n1 mr-3"
               :to="`https://github.com/${commit.commit.author.name}`"
           >
             <v-img
