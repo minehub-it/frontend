@@ -13,8 +13,6 @@ const serverCategoryStore = useServerCategoryStore()
 await serverCategoryStore.initialize()
 await serverListStore.fetchFromContent()
 
-await serverListStore.fetchPlayers()
-
 onMounted(async () => {
   await serverListStore.fetchPlayers()
 })
