@@ -128,11 +128,11 @@ function onNavContentClick() {
 
 .v-list {
   display: inline-block;
-  font-size: 21px;
+  font-size: 20px;
 
   &-item {
-    padding-top: 12px !important;
-    padding-bottom: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 
     :deep(.v-list-item__prepend) {
       min-width: 70px;
