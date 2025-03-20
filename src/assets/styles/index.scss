@@ -265,6 +265,7 @@ $border-color: #e8e8e8;
     display: inline-block;
     padding: 0 10px;
     color: white;
+    z-index: 1;
 
     &:before {
       position: absolute;

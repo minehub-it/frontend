@@ -7,6 +7,7 @@
 </template>
 
 <script setup lang="ts">
+const bannerFeaturedStore = useBannerFeaturedStore()
 const serverListStore = useServerListStore()
 const serverCategoryStore = useServerCategoryStore()
 
@@ -15,5 +16,6 @@ await serverListStore.fetchFromContent()
 
 onMounted(async () => {
   await serverListStore.fetchPlayers()
+  await bannerFeaturedStore.fetchBannerFeatured()
 })
 </script>
