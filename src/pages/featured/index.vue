@@ -4,10 +4,14 @@ const bannerFeaturedStore = useBannerFeaturedStore()
 definePageMeta({
   layout: 'slider'
 })
+
+useServerSeoMeta({
+  title: 'Featured - Minecraft ITALIA',
+})
 </script>
 
 <template>
-  <div class="text-center pt-10 pt-md-16 pb-16">
+  <div class="text-center pt-10 pt-md-16 pb-9">
     <h3 class="text-h3">
       Che c'è di<br class="hidden-sm-and-up" /> <span>nuovo</span> oggi?
     </h3>
